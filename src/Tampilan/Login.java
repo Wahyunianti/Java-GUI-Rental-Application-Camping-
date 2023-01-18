@@ -10,6 +10,8 @@ import Database.ClassUser;
 import Database.ClassValidasi;
 import java.awt.Color;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -24,6 +26,9 @@ public class Login extends javax.swing.JFrame {
 
     public Login() {
         initComponents();
+        Image image = new ImageIcon(getClass().getResource("/Icon/tent (2).png")).getImage();
+                        setIconImage(image);
+                        System.out.println(getClass().getResource("/Icon/tent (2).png"));
         this.setLocationRelativeTo(null);
     }
 
