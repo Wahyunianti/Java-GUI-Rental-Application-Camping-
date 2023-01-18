@@ -9,6 +9,8 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.List;
+import javax.swing.ImageIcon;
+import java.awt.Image;
 
 /**
  *
@@ -29,6 +31,9 @@ public class MenuAdmin extends javax.swing.JFrame {
     public MenuAdmin(String nama) {
         namalogin = nama;
         initComponents();
+        Image image = new ImageIcon(getClass().getResource("/Icon/tent (2).png")).getImage();
+                        setIconImage(image);
+                        System.out.println(getClass().getResource("/Icon/tent (2).png"));
         this.setLocationRelativeTo(null);
         lblNama.setText("Hi, " + nama);
         lblWelcome.setText("Selamat Datang , " + nama + " !");
