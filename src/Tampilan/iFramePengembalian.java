@@ -38,7 +38,8 @@ public final class iFramePengembalian extends javax.swing.JInternalFrame {
     public iFramePengembalian() {
         initComponents();
         loadDataSewa("Disewa");
-
+        String jdl = "Barang Disewa :";
+        awt.add(jdl);
         BasicInternalFrameUI bui = (BasicInternalFrameUI) this.getUI();
         bui.setNorthPane(null);
         bui.setEastPane(null);
