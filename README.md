@@ -8,4 +8,4 @@ Transaction
 ![Tampilan Transaksi](https://user-images.githubusercontent.com/122524103/212946586-b74b36e6-7975-4a63-ade3-57e8b1f4eefb.png)
 
 Return
-![Tampilan Pengembalian](https://user-images.githubusercontent.com/122524103/212946767-1e98be71-6a7b-4ec9-946c-ff0ea7b08dad.png)
+![Tampilan Pengembalian](https://user-images.githubusercontent.com/122524103/213120348-a22cbe79-31d6-47e5-98ba-fc4a97135f87.png)
