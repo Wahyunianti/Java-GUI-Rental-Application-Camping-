@@ -410,6 +410,10 @@ public final class iFramePengembalian extends javax.swing.JInternalFrame {
         if (i == -1) {
             return;
         }
+        awt.removeAll();
+        String jdl = "Barang Disewa :", spc = " ";
+        awt.add(jdl);
+        awt.add(spc);
         idtrx = jTable1.getValueAt(i, 0).toString();
         getTotal(idtrx);
         loadDataTransaksi(idtrx);
