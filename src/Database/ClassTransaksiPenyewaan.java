@@ -228,6 +228,31 @@ public class ClassTransaksiPenyewaan {
 
         }
     }
+    
+    public void getDataTampil3(String key) {
+        try {
+            conn = ClassConnection.getKoneksi();
+            st = conn.createStatement();
+            String sql = "Select count(nama_barang) from transaksi WHERE idtrx = '" + key + "'";
+            ResultSet rs = st.executeQuery(sql);
+            while (rs.next()) {
+                ndata = rs.getInt("COUNT(nama_barang)");
+            }
+            sql = "Select nama_barang FROM transaksi WHERE idtrx = '" + key + "'";
+            rs = st.executeQuery(sql);
+            data = new Object[ndata][1];
+            int idx = 0;
+            while (rs.next()) {
+                data[idx][0] = rs.getString("nama_barang");
+                idx++;
+            }
+            rs.close();
+            st.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(ClassTransaksiPenyewaan.class.getName()).log(Level.SEVERE, null, ex);
+
+        }
+    }
 
     public void InsertTrxPenyewaan(String tanggal, String petugas, String idtrx, String penyewa, String sewa, String kembali, String total, int hari, String stt, String[][] data, int n) {
         try {
