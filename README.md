@@ -9,3 +9,5 @@ Transaction
 
 Return
 ![Tampilan Pengembalian](https://user-images.githubusercontent.com/122524103/213134978-d8c1cb51-f188-47ff-a043-51338d874b08.png)
+
+Copyright@2022
